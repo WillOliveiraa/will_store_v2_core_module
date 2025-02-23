@@ -12,6 +12,20 @@ dependencies:
   flutter:
     sdk: flutter
 
+dependencies_module:
+  git:
+    url: https://github.com/WillOliveiraa/will_store_v2_dependencies_module
+    ref: main
+
+  core_module:
+    git:
+      url: https://github.com/WillOliveiraa/will_store_v2_core_module
+      ref: main
+
+dependency_overrides:
+  dependencies_module:
+    path: ../dependencies_module
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

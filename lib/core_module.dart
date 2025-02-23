@@ -1,5 +1,11 @@
+export './src/base_app.dart';
+export './src/base_router.dart';
 export './src/flavor/flavor.dart';
+export './src/injector/dependencies_injector.dart';
 export './src/languages/app_localizations.dart';
 export './src/languages/entities/languages_entity.dart';
+export './src/micro_app.dart';
+export './src/micro_app_route.dart';
+export './src/micro_core_utils.dart';
 export './src/screen/screen_config.dart';
 export './src/screen/screen_extension.dart';
