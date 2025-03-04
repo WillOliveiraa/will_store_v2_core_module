@@ -7,5 +7,6 @@ export './src/languages/entities/languages_entity.dart';
 export './src/micro_app.dart';
 export './src/micro_app_route.dart';
 export './src/micro_core_utils.dart';
+export './src/providers/local_storage_provider.dart';
 export './src/screen/screen_config.dart';
 export './src/screen/screen_extension.dart';

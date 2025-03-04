@@ -12,14 +12,9 @@ dependencies:
   flutter:
     sdk: flutter
 
-dependencies_module:
-  git:
-    url: https://github.com/WillOliveiraa/will_store_v2_dependencies_module
-    ref: main
-
-  core_module:
+  dependencies_module:
     git:
-      url: https://github.com/WillOliveiraa/will_store_v2_core_module
+      url: https://github.com/WillOliveiraa/will_store_v2_dependencies_module
       ref: main
 
 dependency_overrides:
