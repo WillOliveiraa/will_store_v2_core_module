@@ -79,7 +79,6 @@
         "cartWithoutStock": "Not enough stock",
         "checkout": "Checkout",
         "numberError": "Invalid number"
-
     },
     "catalog": {
         "saveProductCreateProductAddSize": "Add Size",
@@ -94,7 +93,8 @@
         "saveProductCreateProductNameError": "Very short name",
         "saveProductCreateProductSave": "Save",
         "saveProductCreateProductSizes": "Sizes*",
-        "saveProductCreateProductUpdatedSuccessfully": "Product updated successfully"
+        "saveProductCreateProductUpdatedSuccessfully": "Product updated successfully",
+        "loadProductFaled": "Unable to load products"
     },
     "global": {
         "accountPage": "My Account",
@@ -120,6 +120,7 @@
         "requiredField": "Required Field",
         "settings": "Settings",
         "yes": "Yes",
+        "no": "No",
         "youNeedToLogInToAccess": "You need to log in to access",
         "number": "Number",
         "numberHint": "0000 0000 0000 0000",
@@ -142,7 +143,8 @@
         "profileItemLogout": "Logout",
         "profileItemMyAccount": "My account",
         "profileItemNotifications": "Notifications",
-        "profileItemPaymentMethod": "Payment Methods"
+        "profileItemPaymentMethod": "Payment Methods",
+        "profileItemConfirmLogout": "Do you really want to leave?"
     },
     "size": {
         "sizeCreate": "Insert Size",

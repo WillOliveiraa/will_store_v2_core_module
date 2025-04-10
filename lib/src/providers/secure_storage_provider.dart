@@ -2,7 +2,6 @@ import 'package:dependencies_module/external/flutter_secure_storage.dart';
 
 enum SecureStorageKeys {
   usersData('users_data'),
-  username('username'),
   pin('pin');
 
   final String name;

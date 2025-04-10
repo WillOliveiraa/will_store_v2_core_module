@@ -7,9 +7,6 @@ import 'package:dependencies_module/external/local_auth/local_auth.dart';
 import 'package:dependencies_module/external/local_auth/local_auth_android.dart';
 import 'package:flutter/services.dart';
 
-import '../models/user_data_model.dart';
-import './secure_storage_provider.dart';
-
 class AuthenticatorProvider {
   static final _localAuthentication = LocalAuthentication();
   static final _secureStorageProvider = SecureStorageProvider();
@@ -112,7 +109,7 @@ class AuthenticatorProvider {
 
     final indexUser = users.indexWhere((item) {
       final user = UserDataModel.fromMap(jsonDecode(item));
-      return user.userDevicePairingId == userData.userDevicePairingId;
+      return user.userId == userData.userId;
     });
 
     if (!indexUser.isNegative) users.removeAt(indexUser);
@@ -180,42 +177,15 @@ class AuthenticatorProvider {
     return usersData;
   }
 
-  Future<void> updateUser({
-    required String username,
-    required String iban,
-    required String status,
-  }) async {
-    final activeUser = await getActiveUserData();
-
-    if (activeUser == null) return;
-
-    final updatedActiveUser = activeUser.copyWith(username: username);
-
-    await saveUserData(updatedActiveUser);
-  }
-
-  Future<void> setUserPhoto(String? photoUrl) async {
-    final activeUser = await getActiveUserData();
-
-    if (activeUser == null) return;
-
-    final updatedActiveUser = activeUser.copyWith(photoUrl: photoUrl ?? '');
-
-    await saveUserData(updatedActiveUser);
-  }
-
-  Future<void> setActiveUser(String userDevicePairingId) async {
+  Future<void> setActiveUser(String userId) async {
     final users = await getListOfUsers();
 
     if (users == null) return;
 
     await Future.forEach<UserDataModel>(
       users,
-      (user) async => await saveUserData(
-        user.copyWith(
-          isActive: user.userDevicePairingId == userDevicePairingId,
-        ),
-      ),
+      (user) async =>
+          await saveUserData(user.copyWith(isActive: user.userId == userId)),
     );
   }
 
@@ -240,7 +210,7 @@ class AuthenticatorProvider {
     return _secureStorageProvider.deleteValue(SecureStorageKeys.usersData);
   }
 
-  Future<void> clearUser(String accountNumber) async {
+  Future<void> clearUser(String userId) async {
     final usersDataStorage = await _secureStorageProvider.readValue(
       SecureStorageKeys.usersData,
     );
@@ -251,7 +221,7 @@ class AuthenticatorProvider {
 
     usersData.removeWhere((item) {
       final user = UserDataModel.fromMap(jsonDecode(item));
-      return user.userDevicePairingId == accountNumber;
+      return user.userId == userId;
     });
 
     await _secureStorageProvider.writeValue(

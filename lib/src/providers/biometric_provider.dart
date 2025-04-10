@@ -1,7 +1,6 @@
 import 'package:dependencies_module/external/local_auth/local_auth.dart';
 
 import '../../core_module.dart';
-import './authenticator_provider.dart';
 
 class BiometricsProvider {
   final AuthenticatorProvider authenticatorProvider;

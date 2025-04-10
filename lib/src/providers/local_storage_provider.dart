@@ -1,11 +1,6 @@
 import 'package:dependencies_module/external/shared_preferences.dart';
 
-enum LocalStorageKeys {
-  themePreference,
-  languagePreference,
-  userId,
-  biometricTypes,
-}
+enum LocalStorageKeys { themePreference, languagePreference, biometricTypes }
 
 class LocalStorageProvider {
   Future<List<String>> getPersistentListString(LocalStorageKeys key) async {
@@ -53,8 +48,6 @@ class LocalStorageProvider {
         return "theme_preference";
       case LocalStorageKeys.languagePreference:
         return "language_preference";
-      case LocalStorageKeys.userId:
-        return "user_id";
       case LocalStorageKeys.biometricTypes:
         return "biometric_types";
     }

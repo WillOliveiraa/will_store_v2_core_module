@@ -93,7 +93,8 @@
         "saveProductproductFaledUpated": "Não foi possível atualizar o produto",
         "saveProductproductInsertSize": "Insira um tamanho",
         "saveProductproductSave": "Salvar",
-        "saveProductproductUpdatedSuccessfully": "Produto atualizado com sucesso!"
+        "saveProductproductUpdatedSuccessfully": "Produto atualizado com sucesso!",
+        "loadProductFaled": "Não foi possível carregar os produtos"
     },
     "global": {
         "accountPage": "Minha Conta",
@@ -119,6 +120,7 @@
         "requiredField": "Campo obrigatório",
         "settings": "Configurações",
         "yes": "Sim",
+        "no": "Não",
         "youNeedToLogInToAccess": "Você precisa fazer o login para acessar",
         "number": "Número",
         "numberHint": "0000 0000 0000 0000",
@@ -141,7 +143,8 @@
         "profileItemLogout": "Sair",
         "profileItemMyAccount": "Minha Conta",
         "profileItemNotifications": "Notificações",
-        "profileItemPaymentMethod": "Métodos de Pagamentos"
+        "profileItemPaymentMethod": "Métodos de Pagamentos",
+        "profileItemConfirmLogout": "Deseja realmente sair?"
     },
     "size": {
         "sizeCreate": "Criar Tamanho",

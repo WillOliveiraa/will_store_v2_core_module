@@ -15,5 +15,7 @@ export './src/providers/local_storage_provider.dart';
 export './src/providers/secure_storage_provider.dart';
 export './src/screen/screen_config.dart';
 export './src/screen/screen_extension.dart';
+export './src/shared/entities/cpf.dart';
+export './src/shared/models/cpf_model.dart';
 export './src/utils/either.dart';
 export './src/utils/mapper.dart';
