@@ -40,6 +40,7 @@
         "logInLogoutError": "Error when logging out",
         "logInPasswError": "Password too short",
         "logInPassword": "Password",
+        "logInNewPassword": "New password",
         "logInSignUp": "Sign up",
         "logInWelcome": "Welcome the Will Store",
         "logInWithCredentialError": "Error when trying to log in with credentials",
@@ -48,6 +49,7 @@
         "signUp": "Sign up",
         "signUpConfPasswError": "Invalid password confirmation",
         "signUpConfPassword": "Confirm password",
+        "signUpConfNewPassword": "Confirm new password",
         "signUpCpf": "CPF",
         "signUpCpfError": "Invalid CPF",
         "signUpDesc": "Fill in all fields to \ncreate a complete registration",
@@ -127,7 +129,10 @@
         "validate": "Validate",
         "securityCode": "123",
         "holder": "Holder",
-        "holderHint": "John Doe"
+        "holderHint": "John Doe",
+        "filterBy": "Filter by:",
+        "generalError": "Error trying to make call",
+        "save": "Save"
     },
     "product": {
         "productAddToCart": "Add to cart",
@@ -144,7 +149,10 @@
         "profileItemMyAccount": "My account",
         "profileItemNotifications": "Notifications",
         "profileItemPaymentMethod": "Payment Methods",
-        "profileItemConfirmLogout": "Do you really want to leave?"
+        "profileItemConfirmLogout": "Do you really want to leave?",
+        "profileUpdatedSuccessfully": "User updated successfully",
+        "profileUpdatedUserImageSuccessfully": "Avatar updated successfully",
+        "profileUploadUserImageError": "Error when trying to update user image"
     },
     "size": {
         "sizeCreate": "Insert Size",

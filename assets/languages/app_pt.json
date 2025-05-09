@@ -40,6 +40,7 @@
         "logInLogoutError": "Erro ao fazer o logout",
         "logInPasswError": "Senha muito curta",
         "logInPassword": "Senha",
+        "logInNewPassword": "Nova Senha",
         "logInSignUp": "Cadastre-se",
         "logInWelcome": "Bem-Vindo ao Will Store",
         "logInWithCredentialError": "Erro ao tentar logar com as credenciais",
@@ -48,6 +49,7 @@
         "signUp": "Cadastrar",
         "signUpConfPasswError": "Confirmação de senha inválida",
         "signUpConfPassword": "Confimar Senha",
+        "signUpConfNewPassword": "Confimar Nova Senha",
         "signUpCpf": "CPF",
         "signUpCpfError": "CPF inválido",
         "signUpDesc": "Preencha todos os campos para \ncriar um cadastro completo",
@@ -127,7 +129,10 @@
         "validate": "Validade",
         "securityCode": "123",
         "holder": "Títular",
-        "holderHint": "João da Silva"
+        "holderHint": "João da Silva",
+        "filterBy": "Filtrar por:",
+        "generalError": "Erro ao tentar fazer a chamada",
+        "save": "Salvar"
     },
     "product": {
         "productAddToCart": "Adicionar ao Carrinho",
@@ -144,7 +149,10 @@
         "profileItemMyAccount": "Minha Conta",
         "profileItemNotifications": "Notificações",
         "profileItemPaymentMethod": "Métodos de Pagamentos",
-        "profileItemConfirmLogout": "Deseja realmente sair?"
+        "profileItemConfirmLogout": "Deseja realmente sair?",
+        "profileUpdatedSuccessfully": "Usuário atualizado com sucesso!",
+        "profileUpdatedUserImageSuccessfully": "Avatar atualizado com sucesso!",
+        "profileUploadUserImageError": "Não foi possível alterar a imagem do usuário"
     },
     "size": {
         "sizeCreate": "Criar Tamanho",
