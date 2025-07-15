@@ -59,6 +59,7 @@
         "signUpErrorSaveUser": "Unable to save user",
         "signUpFirstName": "First Name",
         "signUpLastName": "Last Name",
+        "signUpCellphone": "Cellphone",
         "signUpNameError": "Very short name",
         "signUpPasswordError": "Very short password",
         "signUpPasswordsArentTheSameError": "The passwords are different",

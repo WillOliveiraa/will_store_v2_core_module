@@ -147,6 +147,19 @@ class AuthenticatorProvider {
     );
   }
 
+  Future<void> saveUserPassword(String password) async {
+    await _secureStorageProvider.writeValue(
+      SecureStorageKeys.userPassword,
+      password,
+    );
+  }
+
+  Future<String?> getUserPassword() async {
+    return await _secureStorageProvider.readValue(
+      SecureStorageKeys.userPassword,
+    );
+  }
+
   Future<UserDataModel?> getActiveUserData() async {
     final usersDataStorage = await _secureStorageProvider.readValue(
       SecureStorageKeys.usersData,
